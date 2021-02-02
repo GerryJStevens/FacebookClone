@@ -1,0 +1,14 @@
+.app {
+  background-color: #f1f2f5;
+  min-height: 100vh;
+}
+
+.app__darkMode {
+  background-color: #050810;
+  min-height: 100vh;
+  color: white;
+}
+
+.app__body {
+  display: flex;
+}

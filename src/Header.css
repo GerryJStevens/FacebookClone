@@ -1,0 +1,159 @@
+.header {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #fff;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__darkMode {
+  background-color: #111323 !important;
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header__left > img {
+  height: 40px;
+}
+
+.header__input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.header__center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header__option,
+.header__option--darkMode {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header__option:hover,
+.header__option--darkMode:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.header__option--darkMode:hover {
+  background-color: #1d253e !important;
+}
+
+.header__option > .MuiSvgIcon-root {
+  color: grey;
+}
+
+.header__option:hover,
+.header__option--darkMode:hover > .MuiSvgIcon-root,
+.header__option--active > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header__option--active {
+  border-bottom: 4px solid #2e81f4;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
+
+.header__right,
+.header__right--darkMode {
+  display: flex;
+}
+
+.header__right--darkMode > button {
+  color: white;
+}
+
+@media (max-width: 725px) {
+  .header__darkMode,
+  .header {
+    padding: 15px 10px !important;
+  }
+  .header__option,
+  .header__option--darkMode {
+    padding: 0 10px;
+  }
+
+  .header__input {
+    display: none;
+  }
+
+  .header__option:hover,
+  .header__option--darkMode:hover {
+    padding: 0 10px;
+  }
+
+  .header__info > h4 {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .header__darkMode,
+  .header {
+    overflow-x: scroll;
+  }
+
+  .header__left {
+    padding-right: 10px;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+}
